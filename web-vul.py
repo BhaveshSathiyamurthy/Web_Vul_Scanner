@@ -31,7 +31,6 @@ def check_headers(url):
 def check_ssl(url):
     print("\n[+] Checking SSL/TLS...")
     try:
-        # Extract hostname from URL
         hostname = url.split("//")[1].split("/")[0]
         ssl_info = ssl.get_server_certificate((hostname, 443))
         print("[+] SSL Certificate Found")
@@ -68,17 +67,13 @@ def check_sensitive_files(url):
 # Main function
 def scan_website(url):
     print(f"\nStarting Vulnerability Scan for {url}")
-    
-    # Check for security headers
+
     check_headers(url)
-    
-    # Check for SSL/TLS vulnerabilities
+
     check_ssl(url)
     
-    # Check for injection points (HTML forms)
     check_forms(url)
     
-    # Check for sensitive file exposure
     check_sensitive_files(url)
     
     print("\nScan Complete.")
