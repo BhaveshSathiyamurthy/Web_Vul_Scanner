@@ -27,7 +27,7 @@ Automatically open the browser for easy exploitation.
 `pip install -r requirements.txt`
 
 # Usage
-`python web_vulnerability_script.py https://www.example.com`
+`python web-vul.py https://www.example.com`
 
 Replace https://www.example.com with the target website URL you want to scan for vulnerabilities.
 
