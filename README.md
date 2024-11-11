@@ -21,7 +21,7 @@ Automatically open the browser for easy exploitation.
 `git clone https://github.com/BhaveshSathiyamurthy/Web_Vul_Scanner.git`
 
 - Change into the project directory:
-`cd web-vul-script`
+`cd Web_Vul_Scanner`
 
 - Install the required dependencies:
 `pip install -r requirements.txt`
